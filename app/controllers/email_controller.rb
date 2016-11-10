@@ -7,7 +7,7 @@ class EmailController < ApplicationController
 		title = params[:title]
 		content = params[:content]
 
-		gmail = Gmail.connect("boognew","whtpehd0927!")
+		gmail = Gmail.connect("ID","PW")
 		gmail.deliver do
 			to email
 			subject title
